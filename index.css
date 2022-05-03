@@ -1,15 +1,48 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h2, h1 ,h4{
+    font-weight: 600;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
 /* navbar and main starts here */
 
 .container-fluid1{
     height: 100vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-width: 5px;
-    /* Created with https://www.css-gradient.com */
-background: #EC89EC;
-background: -webkit-linear-gradient(right, #EC89EC, #869BEA);
-background: -moz-linear-gradient(right, #EC89EC, #869BEA);
-background: linear-gradient(to left, #EC89EC, #869BEA);
 }
+
+.main-bg{
+    /* background-image: url(/images/ezgif.com-gif-maker.png);  */
+    background-repeat:no-repeat;
+}
+
+.left-box{
+    background: #522d5b;
+    border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+ul li a{
+    font-weight: 700;
+    font-style: italic;
+}
+
+.font{
+    font-family: 'Dancing Script', cursive;
+    font-size: 90px;
+}
+
 
 
 
@@ -18,10 +51,8 @@ background: linear-gradient(to left, #EC89EC, #869BEA);
 }
 
 .box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: #ffeaa7;
+    margin-bottom: 30px;
 }
 
 /* navbar and main ends here */
@@ -116,16 +147,199 @@ background: linear-gradient(to left, #EC89EC, #869BEA);
 .sub4{background-color: #bfbafd;}
 .sub5{background-color: #81ecec;}
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* subjects ends here */
+
+/* --------Progress bar------------- */
+
+.progress1{
+    background: rgb(14, 1, 1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 100%;
+  }
+
+  .progress-value1 ,.progress-value2 ,.progress-value3 {
+    /* animation: load 3s normal forwards; */
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 15px;
+    width: 0;
+  }
+
+  .load1{
+      animation: move1 3s normal forwards;
+  }
+
+  .load2{
+    animation: move_2 3s normal forwards;
+    }
+
+  .load3{
+    animation: move_3 3s normal forwards;
+    }
+
+
+
+  @keyframes move1{
+      0%{width: 0;}
+      100%{width: 48%;}
+  }
+
+  @keyframes move_2{
+    0%{width: 0;}
+    100%{width: 64%;}
+}
+
+@keyframes move_3{
+    0%{width: 0;}
+    100%{width: 56%;}
+}
+
+/* progress bar ends */
+
+/* Bar-graph starts here */
+
+.bar-sec{
+    background: #1a1a2e;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section article.addclass{
+    width: 400px;
+    height: auto; 
+}
+
+section article.addclass p{
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 2;
+    overflow: hidden;
+}
+
+section article.addclass div span:nth-child(1){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #0f3460;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+}
+
+section article.addclass div span:nth-child(2){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e94560;
+    z-index: -1;
+    height: 100%;
+}
+
+section article.addclass div:nth-child(1) span:nth-child(2){
+    width: 64%;
+    animation-delay:0;
+    
+}
+section article.addclass div:nth-child(2) span:nth-child(2){
+    width: 56%;
+    animation-delay: 0;
+}
+section article.addclass div:nth-child(3) span:nth-child(2){
+    width: 48%;
+    animation-delay: 0;
+}
+section article.addclass div:nth-child(4) span:nth-child(2){
+    width: 47%;
+    animation-delay: 0;
+}
+section article.addclass div:nth-child(5) span:nth-child(2){
+    width: 35%;
+    animation-delay: 0;
+}
+section article.addclass div:nth-child(6) span:nth-child(2){
+    width: 33%;
+    animation-delay: 0;
+}
+section article.addclass div:nth-child(7) span:nth-child(2){
+    width: 30%;
+    animation-delay: 0;
+}
+section article.addclass div:nth-child(8) span:nth-child(2){
+    width: 27%;
+    animation-delay: 0;
+}
+
+section::before{
+    position: absolute;
+    top: -200px;
+    left: -350px;
+    width: 500px;
+    height: 500px;
+    content: "";
+    background: #77abb7;
+    transform:rotate(300deg);
+}
+section::after{
+    position: absolute;
+    bottom: -200px;
+    right: -350px;
+    width: 500px;
+    height: 500px;
+    content: "";
+    background: #77abb7;
+    transform:rotate(300deg);
+    overflow: hidden;
+}
+
+
+
+.tallstart{
+    animation: tall 1.25s cubic-bezier(0.17,0.67,0,1); 
+}
+
+@keyframes tall{
+    0%{
+        left: -500px;
+        /* width: 0; */
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        /* width:90%; */
+        opacity: 1;
+    }
+}
+
+
+/* Bar-graph ends here */
+
+/* footer starts here */
+
+/* footer ends here */
