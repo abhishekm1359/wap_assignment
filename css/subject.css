@@ -18,6 +18,9 @@ ul li a{
     font-family: 'Dancing Script', cursive;
     font-size: 90px;
 }
+p{
+    font-weight: 600;
+}
 
 body{
 }
@@ -146,4 +149,17 @@ body{
     .wrapper .row{
         margin: 10px 0;
     }
+}
+
+.pdf li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.pdf li a{
+    text-decoration: none;
+}
+.pdf li a:hover{
+    color: #ff7979;
+    font-size: 15px;
 }
