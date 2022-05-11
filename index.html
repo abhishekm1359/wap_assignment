@@ -25,51 +25,54 @@
 <body>
 
     <!-- Navbar and main starts here -->
-    <div class="container-fluid1 center"    >
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <a class="navbar-brand" href="#"> <img src="/images/main-logo.jpg" height="80px"> </a>
+    <div class="container">
+        <div class="row ">
+            <nav class="navbar navbar-expand-lg bg-light">
+                
+                    <a href="" class="navbar-brand"><img src="/images/mainlogo.png"  class="img-fluid" width="130px"></i></a>
+                
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto ">
-                            <li class="nav-item px-5">
-                                <a class="nav-link text-primary fs-5" aria-current="page" href="index.html">Home</a>
+            
+                
+
+                    <div  class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"> <a class="nav-link   fs-5 px-3" role="button"> Home</a></li>
+                            <li class="nav-item dropdown"> <a class="nav-link  fs-5 px-3" role="button" href="#courses"> Courses</a>
+                                
                             </li>
-                            <li class="nav-item px-5">
-                                <a class="nav-link text-primary fs-5" href="#">Couses</a>
+                            
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle  fs-5 px-3" role="button" data-bs-toggle="dropdown">Subjects</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item fs-5"><a class="nav-link" href="#">Web Application</a></li>
+                                    <li class="dropdown-item fs-5"><a class="nav-link" href="#">Python</a></li>
+                                    <li class="dropdown-item fs-5"><a class="nav-link" href="#">Computer Networks</a></li>
+                                </ul>
+                            </li><li class="nav-item dropdown"> <a class="nav-link dropdown-toggle  fs-5 px-3" role="button" data-bs-toggle="dropdown">Language</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item fs-5"><a class="nav-link" href="#">HTML</a></li>
+                                    <li class="dropdown-item fs-5"><a class="nav-link" href="#">JavaScript</a></li>
+                                    <li class="dropdown-item fs-5"><a class="nav-link" href="#">Bootstrap</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item px-5">
-                                <a class="nav-link text-primary fs-5" href="#">Subjects</a>
-                            </li>
-                            <li class="nav-item px-5">
-                                <a class="nav-link text-primary fs-5" href="#">Subjects</a>
-                            </li>
-                            <li class="nav-item px-5">
-                                <a class="nav-link text-primary fs-5" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item ">
-                                <input type="search" class="form-control">
-                            </li>
-                            <li class="nav-item px-2">
-                                <button class="btn btn-warning"> search </button>
-                            </li>
+                            <li class="nav-item"> <a class="nav-link  fs-5 px-3" role="button" href="#contact"> About Us</a></li>
+                        
                         </ul>
+                        <form class="form-inline">
+                                    
+                            <button class="px-5 py-2 bg-warning shake">Contact</button>
+                        </form>
                     </div>
-
-                </nav>
-            </div>
+            </nav>
         </div>
-
-
+    </div>
         <div class="box" style="border : 1px solid black p-5">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-6 text-center">
                     <h1 class="text-primary font-weight-bold  font">Learn More To <br> Know More</h1>
-                    <!-- <img src="/images/main-logo.jpg"> -->
                     <button class="btn btn-success"> Get Started <i class="fas  fa-arrow-right"></i> </button>
                     
                 </div>
@@ -81,22 +84,22 @@
         </div>
 
 
-    </div>
+    
     <!-- navbar and main Ends here -->
 
     <!-- courses starts here -->
     
-    <h1 class="text-center p-4 m-0 bg-dark text-white">COURSES</h1>
-    <div class="container-fluid bg-info">
-        <div class="row d-flex justify-content-center align-items-center cards" style="padding-bottom:100px ;">
+    <h1 class="text-center p-4 m-0 bg-dark text-white" id="courses">COURSES</h1>
+    <div class="container-fluid2 bg-info d-flex justify-content-center align-items-center">
+        <div class="row justify-content-center" style="width: 100%;"  >
             <div class="col-lg-2 col-md-4 col-sm-6 card p-4 m-2" >
-                <a href="/subfiles/htmlcourse.html"><div class="icon_bg1 "></div></a>
+                <a href="/subfiles/htmlcourse.html"><div class="icon_bg1"></div></a>
                 <div class="col-12 mt-3 text-center">
                     <h2> HTML</h2>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-6   card p-4 mt-2 " >
+            <div class="col-lg-2 col-md-4 col-sm-6   card p-4 m-2 " >
                 <div class="icon_bg2"></div>
                 <div class="col-12 mt-3 text-center">
                     <h2> Bootstrap</h2>
@@ -132,7 +135,7 @@
 
     <!-- Subjects Starts here -->
 
-    <h1 class="text-center text-white p-4 bg-dark m-0">SUBJECTS</h1>
+    <h1 class="text-center text-white p-4 bg-dark m-0" id="subjects">SUBJECTS</h1>
     <div class="container-fluid parallax">
         <div class="row ">
             <div class="col-5 d-flex flex-column align-items-center main mx-auto my-3">
@@ -203,7 +206,7 @@
 
 
     <!-- progress bar starts -->
-<div class="container-fluid bg-light" id="expertise">
+<div class="container-fluid bg-light" id="graph">
     <div class="row d-flex justify-content-center align-items-center">
         <h1 class="text-center text-white p-4 bg-dark m-0">Language Usage</h1>
         <div class="col-lg-5 col-md-6 ">
@@ -276,7 +279,110 @@
         </section>
     </main>
 </div>
+<!-- Bar Graph ends here -->
 
+
+<!-- client feedback starts here --> 
+<h1 class="text-center text-white p-4 bg-dark m-0">Feedback</h1>
+<div class="conntainer-fluid  mt-5" style="background: url(images/client-background.jpg) no-repeat ; background-size: cover;">
+    <div class="container" id="feedback">
+        <div class="row">
+            <div class="col-7">
+                <!-- <p class="text-success">Some Feedback</p> -->
+                <h2 class="text-primary text-capitalize">Happy Learn More users</h2>
+            </div>
+
+            <!-- <div class="col-5  d-flex justify-content-end align-items-center">
+                <button class="btn-lg btn1 mx-2"><i class="fas fa-arrow-left"></i></button>
+                <button class="btn-lg btn1 mx-2"><i class="fas fa-arrow-right"></i></button>
+            </div> -->
+        </div>
+
+        <div class="row d-flex justify-content-between mx-1">
+            <div class="col-lg-3 col-md-5 col-sm-10   card mb-5 ">
+                <div class="row bg-white">
+                    <div class="col-12 ">
+                        <i class="fas fa-quote-left fa-3x  my-3 bg-light"></i>
+                    </div>
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat cupiditate omnis veritatis assumenda asperiores.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="images/potrait3.jpg" class="testimonial">
+                            </div>
+
+                            <div class="col-9">
+                                <p class="text-primary mx-2">Lorence Adam<br><span class="text-muted ">Chief Executive</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5 col-sm-10  card mb-5">
+                <div class="row bg-white">
+                    <div class="col-12 ">
+                        <i class="fas fa-quote-left fa-3x my-3 bg-light"></i>
+                    </div>
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat cupiditate omnis veritatis assumenda asperiores.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="images/potrait3.jfif" class="testimonial">
+                            </div>
+
+                            <div class="col-9">
+                                <p class="text-primary mx-2">Lorence Adam<br><span class="text-muted ">Chief Executive</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5 col-sm-10 card mb-5">
+                <div class="row bg-white">
+                    <div class="col-12 ">
+                        <i class="fas fa-quote-left fa-3x my-3 bg-light"></i>
+                    </div>
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat cupiditate omnis veritatis assumenda asperiores.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="images/potrait2.jfif" class="testimonial">
+                            </div>
+
+                            <div class="col-9">
+                                <p class="text-primary mx-2">Lorence Adam<br><span class="text-muted ">Chief Executive</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- client feedback ends here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- last Design starts here -->
 <div class="row d-flex justify-content-center align-items-center">
     <div class="col-2 text-center">
         <i class="fas fa-crop-alt text-muted fa-3x m-4"></i>
@@ -303,12 +409,13 @@
     </div>
 
 </div>
+<!-- last Design ends here -->
 
-<!-- Bar Graph ends here -->
+
 
 <!--Contact Starts here  -->
 
-<div class="container-fluid">
+<div class="container-fluid" id="contact">
     <div class="row">
         <div class="col-12 d-flex justify-content-center">
             <a href="#" class="text-dark"> <i class="fab  fa-twitter fa-2x px-3"></i></a>

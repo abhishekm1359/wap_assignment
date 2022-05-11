@@ -12,14 +12,21 @@ body{
     overflow-x: hidden;
 }
 
+button{
+    border-radius: 50px;
+    border: transparent;
+    font-weight: 600;
+}
+
 
 /* navbar and main starts here */
 
-.container-fluid1{
-    height: 100vh;
+.box{
+    height: 95 vh;
     /* border: 1px solid black; */
     border-width: 5px;
     background-color: #ffeaa7;
+    padding: 5%;
 
 }
 
@@ -35,9 +42,14 @@ body{
     margin-top: 35px; */
 }
 
-ul li a{
-    font-weight: 700;
-    font-style: italic;
+.navbar-nav li>a{
+    color: #0275d8;
+    font-weight: 600;
+}
+.navbar-nav li>a:hover{
+    color: #f5740b;
+    transition-delay: 0.1s;
+    transform: scale(0.9);
 }
 
 .font{
@@ -65,11 +77,16 @@ ul li a{
 
 /* courses starts here */
 
+.container-fluid2{
+    height:80vh;
+}
+
+
 .card{
     transition: transform 0.2s;
 }
 
-.cards .card:hover{
+.card:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -345,3 +362,10 @@ section::after{
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
+/* Testimonial Starts here */
+.testimonial{
+    border-radius: 100px;
+    width: 50px;
+}
+
+/* Testimonial Ends here */
