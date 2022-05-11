@@ -21,14 +21,45 @@ ul li a{
 p{
     font-weight: 600;
 }
-
-body{
+button{
+    border-radius: 50px;
+    border: transparent;
+    font-weight: 600;
 }
 
-.wrapbg{
-    background: #ff7979;
-
+.navbar-nav li>a{
+    color: #0275d8;
+    font-weight: 600;
 }
+.navbar-nav li>a:hover{
+    color: #f5740b;
+    transition-delay: 0.1s;
+    transform: scale(0.9);
+}
+
+
+.wapbg{
+    /* background: #ff7979; */
+    background-image: url(/images/wapbg.png);
+    background-attachment: fixed;
+}
+.cnbg{
+    /* background: #ff7979; */
+    background-image: url(/images/cnbg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}.lssbg{
+    /* background: #ff7979; */
+    background-image: url(/images/lssbg.jpg);
+    background-attachment: fixed;
+}.oopbg{
+    /* background: #ff7979; */
+    background-image: url(/images/sub_bg.jpg);
+    background-attachment: fixed;
+    /* opacity: 1; */
+}
+
 
 .wrapper{
     max-width: 1080px;
@@ -52,7 +83,7 @@ body{
     display: flex;
 }
 
-.wrapper .row-1{
+.wrapper .row-1 .row-3{
     justify-content: flex-start;
 }
 
@@ -79,7 +110,7 @@ body{
     z-index: -1;
 }
 
-.row-1 section::before{
+.row-1 .row-3 section::before{
     right: -7px;
 }
 
@@ -102,6 +133,9 @@ body{
 }
 
 .row-1 section .icon{
+    right: -60px;
+}
+.row-3 section .icon{
     right: -60px;
 }
 .row-2 section .icon{
