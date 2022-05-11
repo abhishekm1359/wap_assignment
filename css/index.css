@@ -96,6 +96,7 @@ button a:hover{
 
 .card{
     transition: transform 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card:hover{
